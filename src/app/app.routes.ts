@@ -9,6 +9,7 @@ import { ContenidodigitalComponent } from './servicios/contenidodigital/contenid
 
 export const routes: Routes = [
     {path:'inicio', component:PanelBusquedaComponent},
+    {path:'', component:PanelBusquedaComponent},
     {path:'nosotros', component:PanelNosotrosComponent},
     {path:'servicios', component:PanelServiciosComponent},
     {path:'contacto', component:PanelContactoComponent},
