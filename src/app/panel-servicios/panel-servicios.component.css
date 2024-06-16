@@ -1,0 +1,59 @@
+main{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.card-1{
+    margin: 20px;
+    background-color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+.card-2{
+    margin: 20px;
+    background-color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+.card-3{
+    margin: 20px;
+    background-color: black;
+    border-radius: 25px;
+    text-align: center;
+}
+img{
+    width: 100%;
+    margin-top: 20px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+button{
+    background-color: #F7B521;
+    border-radius: 50px;
+    width: 90%;
+    height: 50px;
+    border: solid black 2px;
+}
+button:active{
+    background-color: #ffcc5d;
+}
+h3{
+    margin: 20px;
+    height: 40px;
+}
+p{
+    margin: 20px;   
+    height: 80px;
+}

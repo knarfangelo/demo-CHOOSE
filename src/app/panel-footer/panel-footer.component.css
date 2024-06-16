@@ -1,0 +1,14 @@
+footer{
+    display: flex;
+    color: white;
+    background-color: #141414;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+.logo{
+    width: 200px;
+}
+.footer-choose{
+    background-color: black;
+}

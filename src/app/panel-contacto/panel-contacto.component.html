@@ -1,0 +1,44 @@
+<main>
+    <div class="container">
+            <app-navegacion></app-navegacion>
+    </div>
+    <div class="panel-contacto">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3900.713831020497!2d-77.021998!3d-12.131722!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa3849d5cd6513ba1%3A0x913005d2f5fa7087!2sCHOOSE%20AGENCIA%20CREATIVA!5e0!3m2!1ses!2spe!4v1718532495355!5m2!1ses!2spe" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="formulario">
+    <form (ngSubmit)="onSubmit()">
+        <h1>Contactanos</h1>
+        <div>
+          <label for="nombre">Nombres:</label>
+          <input type="text" id="nombre" name="nombre" [(ngModel)]="usuario.nombre" required>
+        </div>
+        <div>
+            <label for="nombre">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" [(ngModel)]="usuario.apellido" required>
+          </div>
+        <div>
+          <label for="telefono">Celular:</label>
+          <input type="tel" id="telefono" name="telefono" [(ngModel)]="usuario.telefono" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" [(ngModel)]="usuario.email" required>
+        </div>
+        <div>
+            <label for="pais">Direccion / Pais:</label>
+            <input type="text" id="pais" name="pais" [(ngModel)]="usuario.pais" required>
+          </div>
+        <div>
+          <label for="mensaje">Consulta:</label>
+          <textarea id="mensaje" name="mensaje" [(ngModel)]="usuario.mensaje" rows="4"></textarea>
+        </div>
+        <div class="button">
+        <button type="submit">Enviar</button></div>
+      </form>
+      <div>
+      <h4>Dirección: C. Enrique del Horme 226, Miraflores 15047 </h4>
+      <h4>Email: marketing&#64;chooseagencia.com</h4>
+      <h4>Teléfono: +51 932 188 688</h4></div>
+    </div>
+</div>
+</main>
+<app-panel-footer></app-panel-footer>

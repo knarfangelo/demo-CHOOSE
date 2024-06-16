@@ -1,0 +1,73 @@
+main{
+    font-family: monospace;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+    background-image: url("/panel2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+main .panel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    width: 350px;
+    color: white;
+    font-size: 30px;
+}
+span{
+    color: rgb(220, 220, 220);
+    font-size: 20px;
+    display: block;
+}
+.card{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    width: 350px;
+    height: 50px;
+    background-color: #F7B521;
+    border-radius: 50px;
+    color: black;
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+button:active{
+    background-color: #ffcc5d;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 800px) {
+    main .panel {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        justify-content: center; /* Centra los elementos verticalmente */
+    }
+
+    .card {
+        width: 80%; /* Ajusta el ancho de las tarjetas */
+        height: auto; /* Ajusta la altura de las tarjetas */
+        margin-bottom: 20px; /* Espacio entre las tarjetas */
+    }
+
+    iframe {
+        height: 400px; /* Ajusta la altura del iframe */
+    }
+}
